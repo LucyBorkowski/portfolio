@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Golden Ratio & Modeling | Lucy Borkowski</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="index.html">LUCY BORKOWSKI</a>
+  <nav>
+    <a href="index.html">ABOUT</a>
+    <a href="academic.html">ACADEMIC</a>
+    <a class="active" href="independent.html">INDEPENDENT</a>
+    <span class="muted">RÉSUMÉ · SOON</span>
+  </nav>
+</header>
+
+<main class="page independent-page">
+
+<a href="independent.html" class="back-link">← Independent Work</a>
+
+<section class="case-study">
+
+  <div class="case-kicker">
+    <span>01 · DATA + WEB PROJECT</span>
+    <span class="status-light">IN DEVELOPMENT</span>
+  </div>
+
+  <h2>The Golden Ratio &amp; Modeling</h2>
+
+  <p class="case-question">
+    Can a mathematical proportion help explain success in fashion modeling?
+  </p>
+
+  <img
+    class="case-hero"
+    src="golden-ratio-landmarks.png"
+    alt="Golden Ratio and Modeling project showing facial landmarks used to convert a photograph into numerical measurements"
+  >
+
+  <div class="case-copy" style="grid-template-columns: 1fr;">
+    <p style="max-width: 900px; margin: 0 auto;">
+      I revisited an experiment I first explored years ago: whether fashion
+      models whose facial proportions are closer to the golden ratio tend to
+      book more clients. Using Python, I turned facial measurements into seven
+      ratios and tested the idea through statistical analysis, regularized
+      regression, leave-one-out cross-validation, and interactive visualization.
+    </p>
+  </div>
+
+  <div class="stat-row">
+    <div>
+      <strong>20</strong>
+      <span>MODELS</span>
+    </div>
+
+    <div>
+      <strong>7</strong>
+      <span>FACIAL RATIOS</span>
+    </div>
+
+    <div>
+      <strong>1.618</strong>
+      <span>GOLDEN RATIO</span>
+    </div>
+  </div>
+
+  <div class="case-split">
+
+    <div>
+      <p class="eyebrow">THE QUESTION →</p>
+      <p>
+        Does proximity to the golden ratio actually relate to modeling success?
+      </p>
+    </div>
+
+    <div>
+      <p class="eyebrow">THE ANALYSIS →</p>
+      <p>
+        Overall proximity to φ showed little relationship with client count.
+        Looking at individual ratios revealed more interesting patterns, but
+        finding a pattern and making a useful prediction are different questions.
+      </p>
+    </div>
+
+  </div>
+
+  <img
+    class="case-image"
+    src="golden-ratio-scatter.png"
+    alt="Scatterplot comparing average distance from the golden ratio with clients booked"
+  >
+
+  <div class="result-callout">
+
+    <p class="eyebrow">THE RESULT →</p>
+
+    <h3>
+      The pattern was more interesting than the prediction.
+    </h3>
+
+    <p>
+      The predictive model using Lasso produced the lowest prediction error, but only modestly improved
+      over a simple baseline predicitve model. The data provides
+      little evidence that facial proportions can reliably predict modeling
+      success in this sample.
+    </p>
+
+  </div>
+
+  <div class="image-pair">
+
+    <img
+      src="golden-ratio-prediction.png"
+      alt="Comparison of predictive model errors"
+    >
+
+    <img
+      src="golden-ratio-lasso.png"
+      alt="Lasso feature selection results showing two retained facial ratios"
+    >
+
+  </div>
+
+  <div class="next-step">
+
+    <p class="eyebrow">WHAT'S NEXT →</p>
+
+    <p>
+      A future version I am working towards will use computer vision to detect facial landmarks
+      automatically, calculate the seven ratios, and make it practical to
+      explore a larger and more consistently measured dataset.
+    </p>
+
+  </div>
+
+  <p class="case-tags">
+    Python · Statistical Analysis · Machine Learning · Regularization ·
+    LOOCV · Interactive Visualization
+  </p>
+
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Lucy Borkowski</span>
+  <a href="independent.html">Independent work →</a>
+</footer>
+
+</body>
+</html>
